@@ -63,3 +63,4 @@ while True:
                 break
 
     time.sleep(300)
+send("봇 연결 테스트 성공")
