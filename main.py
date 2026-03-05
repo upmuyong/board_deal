@@ -17,6 +17,8 @@ keywords = [
 
 seen = set()
 
+send("봇 연결 테스트 성공")
+
 def send(msg):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     requests.post(url, data={
@@ -63,4 +65,3 @@ while True:
                 break
 
     time.sleep(300)
-send("봇 연결 테스트 성공")
