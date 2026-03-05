@@ -17,14 +17,14 @@ keywords = [
 
 seen = set()
 
-send("봇 연결 테스트 성공")
-
 def send(msg):
     url = f"https://api.telegram.org/bot{TOKEN}/sendMessage"
     requests.post(url, data={
         "chat_id": CHAT_ID,
         "text": msg
     })
+
+send("봇 알림 테스트 성공")
 
 while True:
 
